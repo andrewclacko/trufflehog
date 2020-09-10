@@ -6,7 +6,6 @@ pipeline {
   agent any
  
 
-  stages {
     stage('Create Environment') {
       steps {
         {
@@ -18,5 +17,5 @@ pipeline {
          }
       }
     } 
-  }
+  
 }
