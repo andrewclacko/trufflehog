@@ -11,9 +11,9 @@ pipeline {
       steps {
         {
           sh """
-	        'rm trufflehog || true'
-          'docker run gesellix/trufflehog --json https://github.com/andrewclacko > trufflehog'
-          'cat trufflehog '
+	        rm trufflehog || true
+          docker run gesellix/trufflehog --json https://github.com/andrewclacko > trufflehog
+          cat trufflehog 
           """
          }
       }
